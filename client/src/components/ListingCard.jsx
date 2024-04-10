@@ -50,7 +50,7 @@ const ListingCard = ({
   const patchWishList = async () => {
     if (user?._id !== creator._id) {
     const response = await fetch(
-      `http://localhost:3000/users/${user?._id}/${listingId}`,
+      `https://hotel-book-ljxt.onrender.com/users/${user?._id}/${listingId}`,
       {
         method: "PATCH",
         header: {
@@ -78,7 +78,7 @@ const ListingCard = ({
           {listingPhotoPaths?.map((photo, index) => (
             <div key={index} className="slide">
               <img
-                src={`http://localhost:3000/${photo?.replace("public", "")}`}
+                src={`https://hotel-book-ljxt.onrender.com/${photo?.replace("public", "")}`}
                 alt={`photo ${index + 1}`}
               />
               <div
