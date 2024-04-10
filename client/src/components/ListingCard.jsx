@@ -50,7 +50,7 @@ const ListingCard = ({
   const patchWishList = async () => {
     if (user?._id !== creator._id) {
     const response = await fetch(
-      `https://hotel-book-ljxt.onrender.com/users/${user?._id}/${listingId}`,
+      `https://hotel-book-ljxt.onrender.com//users/${user?._id}/${listingId}`,
       {
         method: "PATCH",
         header: {
