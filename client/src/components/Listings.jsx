@@ -18,8 +18,8 @@ const Listings = () => {
     try {
       const response = await fetch(
         selectedCategory !== "All"
-          ? `http://localhost:3000/properties?category=${selectedCategory}`
-          : "http://localhost:3000/properties",
+          ? `https://hotel-book-ljxt.onrender.com/properties?category=${selectedCategory}`
+          : "https://hotel-book-ljxt.onrender.com/properties",
         {
           method: "GET",
         }
